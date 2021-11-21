@@ -49,12 +49,6 @@ function(setStandard target)
     target_compile_features(${target} PRIVATE cxx_std_17)
 endfunction()
 
-# Benchmarks
-
-option (BUILD_BENCHMARKS "Build the benchmarks." ON)
-if (BUILD_BENCHMARKS)
-    add_subdirectory(benchmarks)
-endif()
 
 # Examples
 
