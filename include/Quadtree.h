@@ -51,7 +51,7 @@ public:
         return intersections;
     }
     Box<float> getmBox () const {
-        return mbox;
+        return mBox;
     }
 
 private:
