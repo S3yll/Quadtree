@@ -50,6 +50,9 @@ public:
         findAllIntersections(mRoot.get(), intersections);
         return intersections;
     }
+    Box<float> getmBox () const {
+        return mbox;
+    }
 
 private:
     static constexpr auto Threshold = std::size_t(16);
